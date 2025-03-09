@@ -1,0 +1,68 @@
+export function getData() {
+	return [
+		{
+			id: "id_1",
+			plantName: "서울 태양광 발전소",
+			volume: 50500,
+			bidVolume: 25000,
+			bidNumbers: 95,
+			matchingButton: { active: true },
+		},
+		{
+			id: "id_2",
+			plantName: "인천 풍력 발전기",
+			volume: 60800,
+			bidVolume: 28000,
+			bidNumbers: 110,
+			matchingButton: { active: false },
+		},
+		{
+			id: "id_3",
+			plantName: "대구 지열 발전소",
+			volume: 75900,
+			bidVolume: 32000,
+			bidNumbers: 125,
+			matchingButton: { active: true },
+		},
+		{
+			id: "id_4",
+			plantName: "광주 태양열 발전기",
+			volume: 89000,
+			bidVolume: 40000,
+			bidNumbers: 140,
+			matchingButton: { active: false },
+		},
+		{
+			id: "id_5",
+			plantName: "대전 수력 발전소",
+			volume: 67000,
+			bidVolume: 31000,
+			bidNumbers: 105,
+			matchingButton: { active: true },
+		},
+		{
+			id: "id_6",
+			plantName: "울산 해상 풍력 발전기",
+			volume: 92000,
+			bidVolume: 45000,
+			bidNumbers: 150,
+			matchingButton: { active: true },
+		},
+		{
+			id: "id_7",
+			plantName: "제주 태양광 발전소",
+			volume: 58000,
+			bidVolume: 27000,
+			bidNumbers: 100,
+			matchingButton: { active: false },
+		},
+		{
+			id: "id_8",
+			plantName: "부산 태양열 발전기",
+			volume: 70799,
+			bidVolume: 30032,
+			bidNumbers: 122,
+			matchingButton: { active: true },
+		},
+	]
+}
