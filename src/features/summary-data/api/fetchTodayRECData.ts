@@ -1,6 +1,7 @@
-import { axiosInstance } from "@/config/axios"
+// import { axiosInstance } from "@/config/axios"
 
-export const fetchTodayRECData = async () => {
-	const response = await axiosInstance.get("/TodayREC")
-	return response.data
-}
+// export const fetchTodayRECData = async () => {
+// 	const response = await axiosInstance.get("/TodayREC")
+// 	return response.data
+// }
+// // TodayRecData주석

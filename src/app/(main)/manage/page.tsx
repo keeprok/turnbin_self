@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from "react"
 
-import BidMiniCard from "@/features/manage/components/BidMiniCard/bidMiniCard"
-import BidTable from "@/features/manage/components/BidTable/bidTable"
+import BidMiniCard from "@/features/manage/components/bidMiniCard/bidMiniCard"
+import BidTable from "@/features/manage/components/bidTable/bidTable"
 
 type Bid = {
 	id: number
