@@ -1,6 +1,7 @@
-import { axiosInstance } from "@/config/axios"
+// import { axiosInstance } from "@/config/axios"
 
-export const fetchNotificationsData = async () => {
-	const response = await axiosInstance.get("/Notifications")
-	return response.data
-}
+// export const fetchNotificationsData = async () => {
+// 	const response = await axiosInstance.get("/Notifications")
+// 	return response.data
+// }
+// notification 주석

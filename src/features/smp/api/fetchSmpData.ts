@@ -1,6 +1,7 @@
-import { axiosInstance } from "@/config/axios"
+// import { axiosInstance } from "@/config/axios"
 
-export const fetchSmpData = async () => {
-	const response = await axiosInstance.get("/smp")
-	return response.data
-}
+// export const fetchSmpData = async () => {
+// 	const response = await axiosInstance.get("/smp")
+// 	return response.data
+// }
+// smp 주석
