@@ -4,6 +4,8 @@ import { useTodayRECData } from "@/features/summary-data/hooks/useTodayRECData"
 import { useTodaySMPData } from "@/features/summary-data/hooks/useTodaySMPData"
 import { getMiniCardData } from "@/features/summary-data/utils/mainMiniCardUtils"
 
+import { elcMockData, recMockData, smpMockData } from "./mock"
+
 export function MainPageSummaryCard() {
 	const {
 		data: TODAY_SMP,
@@ -22,12 +24,13 @@ export function MainPageSummaryCard() {
 		isLoading: isElcGenDataLoading,
 		isError: isElcGenDataError,
 	} = useTodayElcGen()
-
-	const miniCardData = getMiniCardData(
-		TODAY_SMP,
-		TODAY_REC,
-		TIME_BASED_GENERATION,
-	)
+	const smpData = isSMPDataError || !TODAY_SMP ? smpMockData : TODAY_SMP
+	const recData = isRECDataError || !TODAY_REC ? recMockData : TODAY_REC
+	const timeData =
+		isElcGenDataError || !TIME_BASED_GENERATION
+			? elcMockData
+			: TIME_BASED_GENERATION
+	const miniCardData = getMiniCardData(smpData, recData, timeData)
 
 	return (
 		<div className="grid grid-cols-4 gap-4">
