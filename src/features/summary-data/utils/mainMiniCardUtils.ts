@@ -1,6 +1,6 @@
+import type { TElcGen } from "@/features/summary-data/types/TodayElcGen"
 import type { TRECData } from "@/features/summary-data/types/TodayREC"
 import type { TSMPData } from "@/features/summary-data/types/TodaySmp"
-import type { TElcGen } from "@/features/summary-data/types/TodayElcGen"
 
 export function getMiniCardData(
 	todaySMPData: TSMPData[] = [],
