@@ -1,14 +1,15 @@
 "use client"
 
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
+import type { AxisDomainItem } from "recharts/types/util/types"
 
 import {
 	ChartContainer,
 	ChartTooltip,
 	ChartTooltipContent,
 } from "@/shadcn/components/chart"
+
 import type { AreaChartComponentPT } from "./type"
-import { AxisDomainItem } from "recharts/types/util/types"
 
 export function AreaChartComponent({
 	chartConfig,
