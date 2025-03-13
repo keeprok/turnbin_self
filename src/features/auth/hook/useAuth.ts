@@ -1,18 +1,21 @@
 import { useMutation } from "@tanstack/react-query"
 
-import type { LoginResponse } from "../api/authApi"
-import { postLogin } from "../api/authApi"
+import { MockPostLogin } from "../api/mockAuthApi"
+
+// import type { LoginResponse } from "../api/authApi"
+// import { postLogin } from "../api/authApi"
 
 export const useAuth = () => {
 	// 로그인 Mutation
 	const loginMutation = useMutation<
-		LoginResponse,
+		{ message: string; token: string },
 		Error,
 		{ email: string; password: string }
 	>({
-		mutationFn: postLogin,
+		mutationFn: MockPostLogin,
 		onSuccess: (data) => {
 			console.log("로그인 성공:", data)
+			localStorage.setItem("token", data.token)
 		},
 		onError: (error) => {
 			console.error("로그인 실패:", error)
